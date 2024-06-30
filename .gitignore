@@ -1,0 +1,78 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+AlianzaUsers-front/dist
+AlianzaUsers-front/tmp
+AlianzaUsers-front/out-tsc
+AlianzaUsers-front/bazel-out
+
+# Node
+AlianzaUsers-front/node_modules
+AlianzaUsers-front/npm-debug.log
+AlianzaUsers-front/yarn-error.log
+
+# IDEs and editors
+AlianzaUsers-front/.idea/
+AlianzaUsers-front/.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+AlianzaUsers-front/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db
+
+
+
+HELP.md
+AlianzaUsers-front/target/
+AlianzaUsers-front/!.mvn/wrapper/maven-wrapper.jar
+AlianzaUsers-front/!**/src/main/**/target/
+AlianzaUsers-front/!**/src/test/**/target/
+
+### STS ###
+AlianzaUsers-front/.apt_generated
+AlianzaUsers-front/.classpath
+AlianzaUsers-front/.factorypath
+AlianzaUsers-front/.project
+AlianzaUsers-front/.settings
+AlianzaUsers-front/.springBeans
+AlianzaUsers-front/.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+AlianzaUsers-front/!**/src/main/**/build/
+AlianzaUsers-front/!**/src/test/**/build/
+
+### VS Code ###
+.vscode/

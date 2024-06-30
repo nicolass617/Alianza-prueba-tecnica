@@ -1,0 +1,26 @@
+.custom-btn {
+    font-size: 1.2rem;
+    padding: 4px 6px;
+}
+
+.container {
+    width: 100%;
+}
+
+.container-search {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px 0 0 12px;
+}
+
+.search {
+    padding: 8px 16px;
+    border: 1px solid #d1d1d1;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+}

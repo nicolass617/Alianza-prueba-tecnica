@@ -1,0 +1,52 @@
+<form [formGroup]="clientForm">
+    <h5 class="modal-title">Create New Client</h5>
+    <hr class="mb-4">
+    <div class="form-group row mt-3">
+        <label for="businessID" class="col-sm-4 col-form-label">Name</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="businessID" formControlName="businessID">
+            <div *ngIf="showFieldError('businessID')" class="text-danger">Campo obligatorio</div>
+        </div>
+    </div>
+
+    <div class="form-group row mt-3">
+        <label for="phone" class="col-sm-4 col-form-label">Phone</label>
+        <div class="col-sm-8">
+            <input type="tel" class="form-control" id="phone" formControlName="phone" pattern="[0-9]*">
+            <div *ngIf="showFieldError('phone')" class="text-danger">Solo se permiten números</div>
+        </div>
+    </div>
+
+    <div class="form-group row mt-3">
+        <label for="email" class="col-sm-4 col-form-label">Email</label>
+        <div class="col-sm-8">
+            <input type="email" class="form-control" id="email" formControlName="email">
+            <div *ngIf="showFieldError('email')" class="text-danger">Formato de correo electrónico no válido</div>
+        </div>
+    </div>
+
+    <div class="form-group row mt-3">
+        <label for="startDate" class="col-sm-4 col-form-label">Start Date</label>
+        <div class="col-sm-8">
+            <input type="date" class="form-control" id="startDate" formControlName="startDate">
+            <div *ngIf="showDateError()" class="text-danger">{{ showDateError() }}</div>
+        </div>
+    </div>
+
+    <div class="form-group row mt-3">
+        <label for="endDate" class="col-sm-4 col-form-label">End Date</label>
+        <div class="col-sm-8">
+            <input type="date" class="form-control" id="endDate" formControlName="endDate">
+            <div *ngIf="showDateEndError()" class="text-danger">{{ showDateEndError() }}</div>
+        </div>
+    </div>
+
+
+
+    <div class="form-group row mt-3">
+        <div class="col-sm-12">
+            <button type="button" class="btn btn-primary" [disabled]="!clientForm.valid"
+                (click)="saveClient()">Guardar</button>
+        </div>
+    </div>
+</form>
